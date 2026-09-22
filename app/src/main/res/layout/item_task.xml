@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#151F38"
+    android:padding="14dp">
+
+    <!-- Checkbox -->
+    <CheckBox
+        android:id="@+id/checkTask"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:buttonTint="#6C63FF"
+        android:contentDescription="Complete task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- اسم المهمة -->
+    <TextView
+        android:id="@+id/tvTaskTitle"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:text="Study Java"
+    android:textColor="@android:color/white"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@id/checkTask"
+    app:layout_constraintTop_toTopOf="@id/checkTask" />
+
+    <!-- وقت المهمة -->
+    <TextView
+        android:id="@+id/tvTaskTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Today • 7:00 PM"
+        android:textColor="#8F96B3"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tvTaskTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTaskTitle" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
